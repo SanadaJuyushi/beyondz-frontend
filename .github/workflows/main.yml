@@ -40,8 +40,8 @@ jobs:
       - name: npm install
         run: npm install
       
-      - name: npm run build
-        run: npm run build:prod
+      - name: npm build
+        run: npm run build -- --prod
       
       - name: Deploy to Firebase
         uses: w9jds/firebase-action@master
